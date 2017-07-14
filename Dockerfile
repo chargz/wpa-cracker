@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 RUN sudo apt-get -y update
-RUN sudo apt-get -y install aircrack-ng
+RUN sudo apt-get -y install aircrack-ng curl
 COPY ./hash/ /root/
 WORKDIR /root/
 RUN wget http://scrapmaker.com/data/wordlists/dictionaries/rockyou.txt
